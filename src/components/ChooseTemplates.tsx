@@ -7,7 +7,7 @@ export const ChooseTemplates = () => {
 
   useEffect(() => {
     const getTemplates = async () => {
-      const result = await fetch(`http://fastdocs.kz/api/templates`)
+      const result = await fetch(`https://fastdocs.kz/api/templates`)
         .then((data) => data.json())
         .catch(console.error);
       setAvailableTemplates(result);

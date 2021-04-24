@@ -50,7 +50,7 @@ export const Main = () => {
     actions: FormikHelpers<FormikValues>
   ) => {
     actions.setSubmitting(true);
-    const result = await fetch(`http://fastdocs.kz/api/generate_documents`, {
+    const result = await fetch(`https://fastdocs.kz/api/generate_documents`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
